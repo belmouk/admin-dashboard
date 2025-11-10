@@ -73,10 +73,15 @@ body {
     grid-template-rows: 1fr 5fr;
     grid-template-areas: "nav header"
         "nav main";
+    padding: 2%;
 }
 
 header {
     grid-area: header;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 3rem;
+    align-items: start;
 }
 
 nav {
@@ -91,4 +96,37 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.header-user-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+}
+
+.header-greetings {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.header-user-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+
+    align-items: baseline;
+}
+
+.header-user-actions button {
+    padding: 1em;
+    border-radius: 15%;
+    width: 10ch;
+    font-size: 0.9rem;
+    border: none;
+    background-color: rgb(51, 192, 173);
+    color: white;
 }
