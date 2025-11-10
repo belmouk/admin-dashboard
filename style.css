@@ -170,6 +170,11 @@ form {
     background-color: rgb(51, 192, 173);
     color: white;
     outline: none;
+    cursor: pointer;
+}
+
+.header-user-actions button:hover {
+    background-color: rgb(50, 238, 213)
 }
 
 header img {
